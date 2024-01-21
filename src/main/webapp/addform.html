@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('4112972.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            height: 100vh;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0);
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #3498db; 
+        }
+
+        p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+
+        form {
+            width: 500px;
+            text-align: center;
+            margin: 20px auto; 
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        label {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        input {
+            width: 400px;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>India Hospital</h1>
+        <p>Add the details of Patient</p>
+    </header>
+
+    <form action="http://localhost:8080/HospitalManagementSystem/add">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label>Age:</label>
+        <input type="number" id="age" name="age" required>
+        <br>
+
+        <label >Gender:</label>
+        <input type="text" id="gender" name="gender" required>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
